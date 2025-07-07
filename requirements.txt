@@ -1,0 +1,47 @@
+Project Requirements for "The Mysterious Island Adventure" Game
+
+
+
+
+1. Development Environment:
+	-Operating System:
+		Any OS that supports C development (Windows, macOS, Linux).
+
+	-Compiler:
+
+		A C compiler that supports standard C (C89/C99 or later). Examples:
+		1)GCC (GNU Compiler Collection)
+		2)Clang
+		3)Microsoft Visual C++ Compiler (MSVC)
+		4)MinGW (for Windows)
+
+	-Text Editor / IDE:
+		Any code editor or integrated development environment (IDE) for C programming, such as:
+
+			1)Visual Studio Code
+			2)Code::Blocks
+			3)Eclipse CDT
+			4)CLion
+			5)Vim / Emacs / Nano (for terminal users)
+
+2. Programming Language :
+	Language: C
+		Standard Library:
+			<stdio.h> for input/output functions (printf, scanf).
+
+3. Libraries:
+		Standard C Library:
+			No external or third-party libraries are required. The program uses only standard input/output functions from the C standard library.
+
+4. Hardware Requirements :
+Basic hardware capable of running a C compiler and terminal/console applications.
+
+5. Execution Environment:
+	Console / Terminal:
+			The game runs in a command-line interface (CLI) environment where text input and output are supported.
+
+6. Functional Requirements :
+	-User input handling through scanf for menu choices.
+	-Display of text menus and game narrative using printf.
+	-Control flow to navigate between different "rooms" or game states.
+	-Looping structure to keep the game running until the player chooses to exit.
