@@ -95,50 +95,12 @@ int main() {
                         inGame = 0;
                         break;
                     case 2: printf("You collect shiny obsidian.\n"); break;
-                    case 3: printf("You relax at the warm spring.\n"); break;
+                 //   case 3: printf("You relax at the warm spring.\n"); break;
                     case 4: inRoom = 2; break;
                     default: printf("\033[1;31mInvalid choice.\033[0m\n");
-                }
-            }
-
-            while (inRoom == 4) {
-                printf("\n\033[0;36mYou step into the murky swamp.\033[0m\n");
-                printf("\033[1;36m1. Follow strange sound\033[0m\n");
-                printf("\033[1;36m2. Collect herbs\033[0m\n");
-                printf("\033[1;36m3. Set a trap\033[0m\n");
-                printf("\033[1;36m4. Return to beach\033[0m\n");
-                printf("Choice: ");
-                scanf("%d", &roomChoice);
-
-                switch (roomChoice) {
-                    case 1: printf("You follow the sound to an abandoned village.\n"); inRoom = 5; break;
-                    case 2: printf("You gather medicinal herbs.\n"); break;
-                    case 3: printf("You set a snare trap.\n"); break;
-                    case 4: inRoom = 0; break;
-                    default: printf("\033[1;31mInvalid choice.\033[0m\n");
-                }
-            }
-
-            while (inRoom == 5) {
-                printf("\n\033[1;35mYou explore a quiet, abandoned village.\033[0m\n");
-                printf("\033[1;95m1. Search huts\033[0m\n");
-                printf("\033[1;95m2. Look for supplies\033[0m\n");
-                printf("\033[1;95m3. Inspect center totem\033[0m\n");
-                printf("\033[1;95m4. Return to swamp\033[0m\n");
-                printf("Choice: ");
-                scanf("%d", &roomChoice);
-
-                switch (roomChoice) {
-                    case 1: printf("You find an old map.\n"); break;
-                    case 2: printf("You discover useful supplies.\n"); break;
-                    case 3: printf("The totem glows faintly—its symbols match the cave.\n"); break;
-                    case 4: inRoom = 4; break;
-                    default: printf("\033[1;31mInvalid choice.\033[0m\n");
-                }
-            }
-        }
-    }
+             
 
     typeEffect("\n\033[1;32mThanks for playing The Mysterious Island Adventure!\033[0m\n", 30);
     return 0;
 }
+
