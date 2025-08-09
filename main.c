@@ -95,12 +95,13 @@ int main() {
                         inGame = 0;
                         break;
                     case 2: printf("You collect shiny obsidian.\n"); break;
-                 //   case 3: printf("You relax at the warm spring.\n"); break;
+                    case 3: printf("You relax at the warm spring.\n"); break;
                     case 4: inRoom = 2; break;
                     default: printf("\033[1;31mInvalid choice.\033[0m\n");
-             
+             //code ia still in progress ,this ia not the final edit. 
 
     typeEffect("\n\033[1;32mThanks for playing The Mysterious Island Adventure!\033[0m\n", 30);
     return 0;
 }
+
 
