@@ -144,10 +144,29 @@ int main() {
                     break;
                 default:
                     printf("\033[1;31mInvalid choice.\033[0m\n");
+                
             }
         }
+         while (inRoom == 4) {
+                printf("\n\033[0;36mYou step into the murky swamp.\033[0m\n");
+                printf("\033[1;36m1. Follow strange sound\033[0m\n");
+                printf("\033[1;36m2. Collect herbs\033[0m\n");
+                printf("\033[1;36m3. Set a trap\033[0m\n");
+                printf("\033[1;36m4. Return to beach\033[0m\n");
+
+                roomChoice = getIntInput("Choice: ");
+
+                switch (roomChoice) {
+                    case 1: printf("You follow the sound to an abandoned village.\n"); inRoom = 5; break;
+                    case 2: printf("You gather medicinal herbs.\n"); break;
+                    case 3: printf("You set a snare trap.\n"); break;
+                    case 4: inRoom = 0; break;
+                    default: printf("\033[1;31mInvalid choice.\033[0m\n");
+                }
+            }
     }
 //this is not the final draft.the game is still in progress.
     typeEffect("\n\033[1;32mThanks for playing The Mysterious Island Adventure!\033[0m\n", 30);
     return 0;
 }
+
