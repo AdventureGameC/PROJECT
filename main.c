@@ -60,10 +60,35 @@ int main() {
             } else {
                 printf("\033[1;31mInvalid choice.\033[0m\n");
             }
+            
+            while (inRoom == 1) {
+            printf("\n\033[0;32mYou are in the dense jungle, surrounded by towering trees and wildlife.\033[0m\n");
+            printf("\033[1;32m1. Walk deeper into jungle (find hidden cave entrance)\033[0m\n");
+            printf("\033[1;32m2. Look for shelter (resting spot)\033[0m\n");
+            printf("\033[1;32m3. Climb a tall tree (see distant volcano smoke)\033[0m\n");
+            printf("\033[1;32m4. Gather fruits (find some berries)\033[0m\n");
+            printf("\033[1;32m5. Return to beach\033[0m\n");
+
+            roomChoice = getIntInput("Choice: ");
+
+            if (step == 1 && roomChoice == 3) {
+                printf("From the treetop, you spot smoke rising from the volcano far away.\n");
+                step = 2;
+                inRoom = 2;
+            } else if (roomChoice == 5) {
+                inRoom = 0;
+            } else {
+                printf("\033[1;33mThat doesn't seem to be the right path. Try exploring other places.\033[0m\n");
+                inRoom = 0;
+            }
+        }
+
+            
 
        
 
     typeEffect("\n\033[1;32mThanks for playing The Mysterious Island Adventure!\033[0m\n", 30);
     return 0;
 }
+
 
