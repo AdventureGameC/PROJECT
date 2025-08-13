@@ -5,7 +5,8 @@
     2. Chiranjeet Sarkar Amit (2523703042)
     3. Md. Jahidul Haque Abir (2523059642)
     4. Kaushik Sharma (2524251642)
- > Last Modified Date  : 12-08-2025
+    5. Dewan Tahsin Alam (2524423642)
+ > Last Modified Date: 12-08-2025
  */
 
 #include <stdio.h>
@@ -186,3 +187,4 @@ int main() {
     typeEffect("\n\033[1;32mThanks for playing The Mysterious Island Adventure!\033[0m\n", 30);
     return 0;
 }
+
