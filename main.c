@@ -1,3 +1,13 @@
+/*
+ > Project Name:Text Based Adventure Game
+ > Developers:
+    1. Md. Rakibul Islam Sagor (2522028042)
+    2. Chiranjeet Sarkar Amit (2523703042)
+    3. Md. Jahidul Haque Abir (2523059642)
+    4. Kaushik Sharma (2524251642)
+ > Last Modified Date  : 12-08-2025
+ */
+
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
